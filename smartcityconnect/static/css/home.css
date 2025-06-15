@@ -1,0 +1,346 @@
+@media screen and (min-width: 280px) and (max-width:800px){
+    body::-webkit-scrollbar{
+        display: none;
+    }
+    /* header text*/
+    a.navbar-brand.text-light.fw-bold.ps-lg-4 {
+        font-size: 15px !important;
+}
+/*crausal caption*/ 
+.dis {
+    display:block !important;
+}
+h2.text {
+    padding-bottom: 60% !important ;
+}
+.d-none {
+    display: block !important;
+    
+}
+/* dropdown*/
+button#dropdownMenuButton1 {
+    width: 220px !important;
+    background-color: #f1f1f1;
+    height: 50px;
+    margin-top: 5px;
+}
+.dropflex {
+    display:block !important;
+    padding-left: 5%;
+
+}
+button#dropdownMenuButton2 {
+    width: 220px !important;
+    background-color: #f1f1f1;
+    color:black;
+    height: 50px;
+    margin-top: 5px;
+}
+
+button.btn.btn-primary {
+    width: 220px !important;
+    height: 50px;
+    margin-top: 5px;
+}
+input#inputSeacrh {
+    width: 220px !important;
+    height: 50px;
+    margin-top: 5px;
+}
+
+/*Services part*/
+.text h1 {
+    
+        padding-left: 10% !important;
+        font-weight: bold !important;
+
+}
+.service  {
+    display: block !important;
+    padding-top: 3%;
+    margin-right: 0px !important;
+   
+}
+img.img-thumbnail {
+    height: 180px;
+    border: none;
+    border-radius: 8%;
+    margin-left: 0% !important;
+    margin-right: 0px !important;
+}
+
+.service h5 {
+   
+    padding-left: 44% !important;
+    padding-top: 2% !important;
+    font-weight: bold;
+}
+/*after services*/
+.section1{
+    display: block !important;
+    
+}
+.section2{
+    display: block !important;
+    margin-left: 10px;
+    
+}
+button.explorebuton {
+    border: 1px solid rgb(44, 174, 225);
+    margin-top: 3% !important;
+    margin-left: 0 !important;
+    padding: 10px 70px !important;
+}
+.explorebuton a {
+    
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+i.fa-solid.fa-bars {
+    padding-top: 0px !important;
+    font-size: 50px;
+    margin-left: 0px !important;
+    font-weight: bolder;
+}
+i.fa-solid.fa-comment-dots {
+    font-size: 50px;
+    padding-top: 0px !important;
+}
+
+h3.text-primary.text1 {
+    padding-left: 0px !important;
+}
+p.text2 {
+    padding-left: 0px !important;
+    
+}
+h3.toplink.text-light.fw-bold.pt-4 {
+    padding-left: 10px;  
+}
+/* regpart*/
+.Regpart {
+    display: block !important;
+    padding: 10px 30px 15px 40px !important;
+    gap: 40%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 250px;
+}
+.regbut {
+    padding: 10px 30px !important;
+    border: None;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.t1t{
+    padding-top: 1rem !important;
+    font-size: 16px;
+}
+.faqpart{
+    display: block !important;
+    gap: 50px;
+    width: 280px;
+}
+.textpart h1 {
+    font-size: 50px !important;
+}
+.twt{
+        padding-left: 5px !important;
+        padding-top: 20px;
+        font-size: 14px !important;
+
+
+}
+.t2t {
+    padding-top: 1rem !important;
+    font-size: 14px;
+}
+.Regpart2{
+    display: block !important;
+    padding: 10px 20px 15px 40px !important;
+    gap: 40%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 250px;
+}
+.regbut1 {
+    padding: 10px 50px !important;
+    border: None;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+}
+body::-webkit-scrollbar{
+        display: none;
+    }
+
+/*slider images*/
+img.d-block.pic {
+    
+    height: 450px;
+    width: 100%;
+   
+    object-fit: cover;
+}
+h2.text {
+    padding-bottom: 17%;
+}
+/*header text*/
+a.navbar-brand.text-light.fw-bold.ps-lg-4 {
+    font-size: 28px;
+}
+/* dropdown*/
+button#dropdownMenuButton1 {
+    width: 300px;
+    background-color: #f1f1f1;
+    height: 50px;
+}
+button#dropdownMenuButton2 {
+    width: 300px;
+    background-color: #f1f1f1;
+    color:black;
+    height: 50px;
+}
+
+button.btn.btn-primary {
+    width: 200px;
+    height: 50px;
+}
+input#inputSeacrh {
+    width: 300px;
+    height: 50px;
+}
+/*services*/
+
+
+.text h1{
+    padding-left: 36%;
+    font-weight: bold;
+}
+.service {
+    display: flex ;
+    padding-top: 2%;
+    gap: 3%;
+    margin-right: 15%;
+    margin-left: 5%;
+}
+img.img-thumbnail {
+    height: 180px;
+    border: none;
+    width: 400px;
+    margin-left: 2%;
+    border-radius: 8%;
+    
+}
+.service p {
+    padding-left: 33%;
+    padding-top: 3%;
+    font-size: 15px;
+}
+.break{
+    margin-left: 30%;
+    height: 2px;
+    border: none;
+    background-color:rgb(44, 174, 225);
+    color: rgb(7, 7, 255) ;
+    opacity: 1;
+    margin-top: 20px;
+   
+}
+/*after services*/
+.section1{
+    display: flex;
+    
+}
+.section2{
+    display: flex;
+    
+}
+button.explorebuton {
+    border: 1px solid rgb(44, 174, 225) ;
+    
+    margin-top: 6%;
+    margin-left: 6%;
+    padding: 20px  220px;
+}
+.explorebuton a {
+    
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+i.fa-solid.fa-comment-dots {
+    font-size: 50px;
+    padding-top: 10px;
+}
+p i.fa-solid.fa-bars {
+    padding-top: 10%;
+    font-size: 50px;
+    margin-left: 16%;
+    font-weight: bolder;
+}
+h3.text-primary.text1 {
+    padding-left: 100px;
+    
+}
+p.text2 {
+    padding-left: 100px;
+    
+}
+.break2{
+    margin-left: 30%;
+    height: 2px;
+    border: none;
+    background-color:rgb(44, 174, 225);
+    color: rgb(7, 7, 255) ;
+    opacity: 1;
+    margin-top: 40px;
+   
+}
+.Regpart{
+    display: flex;
+    padding: 15px  40px 10px 40px;
+    gap: 40%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.regbut{
+    padding: 20px 60px;
+    border: None;
+    border-radius: 10px;
+}
+.regbut a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+.faqpart{
+    display: flex;
+    gap: 50px;
+}
+.textpart{
+    margin-top: 5%;
+    
+}
+.textpart h1{
+    font-size: 70px;
+    
+}
+h3.toplink {
+    padding-left: 80%;
+}
+h3.toplink a{
+    background-color: #fff;
+    color: rgb(101 101 247);
+    margin-left: 5px;
+   padding: 5px;
+}
+   
+

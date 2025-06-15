@@ -1,0 +1,177 @@
+
+/*for navbar*/
+/* Base Styles */
+.navbar-container {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+.navbar {
+  padding: 0.8rem 0;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  padding: 0.5rem 0;
+}
+
+.logo-text {
+  margin-right: 8px;
+  position: relative;
+}
+
+.logo-text::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.brand-logo:hover .logo-text::after {
+  width: 100%;
+}
+
+.logo-icon {
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  animation: pulse 2s infinite;
+}
+
+.brand-logo:hover .logo-icon {
+  transform: translateY(-3px);
+  color: #ffcc00;
+  animation: none;
+}
+
+/* Nav Items Animation */
+.nav-link-hover {
+  position: relative;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.nav-link-hover span {
+  position: relative;
+  z-index: 1;
+}
+
+.nav-link-hover::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-link-hover:hover::before {
+  width: 100%;
+}
+
+/* Login Button Special Style */
+.login-btn {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  margin-left: 0.5rem;
+  padding: 0.5rem 1.2rem !important;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Add this to your existing CSS */
+.navbar-toggler {
+  border: none;
+  padding: 0.3rem;
+}
+
+.navbar-toggler-icon {
+  background-image: none;
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #0d6efd;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 0.25rem;
+  }
+
+  .nav-item {
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .login-btn {
+    margin-left: 0;
+    display: inline-block;
+    width: auto;
+  }
+
+  .navbar-nav {
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 800px) {
+  i.fa-solid.fa-bars {
+    padding-top: 0px !important;
+    font-size: 30px;
+    margin-left: 0px !important;
+    font-weight: bolder;
+  }
+}
+/* Small devices (landscape phones, less than 768px) */
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .brand-logo {
+    font-size: 1.3rem;
+  }
+
+  .logo-icon {
+    font-size: 1rem;
+  }
+
+  .nav-link-hover {
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+/* Animations */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Focus effects for accessibility */
+.nav-link:focus,
+.brand-logo:focus {
+  outline: 2px solid white;
+  outline-offset: 3px;
+}

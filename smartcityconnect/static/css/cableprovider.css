@@ -1,0 +1,363 @@
+/*for navbar*/
+/* Base Styles */
+.navbar-container {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+.navbar {
+  padding: 0.8rem 0;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  padding: 0.5rem 0;
+}
+
+.logo-text {
+  margin-right: 8px;
+  position: relative;
+}
+
+.logo-text::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.brand-logo:hover .logo-text::after {
+  width: 100%;
+}
+
+.logo-icon {
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  animation: pulse 2s infinite;
+}
+
+.brand-logo:hover .logo-icon {
+  transform: translateY(-3px);
+  color: #ffcc00;
+  animation: none;
+}
+
+/* Nav Items Animation */
+.nav-link-hover {
+  position: relative;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.nav-link-hover span {
+  position: relative;
+  z-index: 1;
+}
+
+.nav-link-hover::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-link-hover:hover::before {
+  width: 100%;
+}
+
+/* Login Button Special Style */
+.login-btn {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  margin-left: 0.5rem;
+  padding: 0.5rem 1.2rem !important;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+ /* Add this to your existing CSS */
+.navbar-toggler {
+border: none;
+padding: 0.3rem;
+}
+
+.navbar-toggler-icon {
+background-image: none;
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #0d6efd;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 0.25rem;
+  }
+  
+  .nav-item {
+    margin-bottom: 0.5rem;
+  }
+  
+  .nav-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .login-btn {
+    margin-left: 0;
+    display: inline-block;
+    width: auto;
+  }
+  
+  .navbar-nav {
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 800px) {
+  i.fa-solid.fa-bars {
+      padding-top: 0px !important;
+      font-size: 30px;
+      margin-left: 0px !important;
+      font-weight: bolder;
+  }
+}
+/* Small devices (landscape phones, less than 768px) */
+
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .brand-logo {
+    font-size: 1.3rem;
+  }
+  
+  .logo-icon {
+    font-size: 1rem;
+  }
+  
+  .nav-link-hover {
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+/* Animations */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Focus effects for accessibility */
+.nav-link:focus, .brand-logo:focus {
+  outline: 2px solid white;
+  outline-offset: 3px;
+}
+/*for slider*/
+    /* Slider container */
+    .carousel {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    /* Image styling */
+    .slider-img {
+      height: 80vh;
+      min-height: 500px;
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(0.85);
+    }
+    
+    /* Perfectly centered text (no background) */
+    .carousel-caption {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      text-align: center;
+      padding: 0;
+      color: white;
+      text-shadow: 
+        1px 1px 3px rgba(0, 0, 0, 0.8),
+        0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    /* Text styling */
+    .slider-title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+    
+    .slider-subtitle {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+    
+    /* Navigation arrows */
+    .carousel-control-prev, 
+    .carousel-control-next {
+      width: 5%;
+      opacity: 0.8;
+      transition: all 0.3s ease;
+    }
+    
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+      opacity: 1;
+    }
+    
+    /* Indicators */
+    .carousel-indicators {
+      bottom: 20px;
+    }
+    
+    .carousel-indicators button {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin: 0 6px;
+      transition: all 0.3s ease;
+    }
+    
+    .carousel-indicators button.active {
+      transform: scale(1.3);
+      background-color: #fff;
+    }
+    
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .animate__animated {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+    }
+    
+    .animate__fadeIn {
+      animation-name: fadeIn;
+    }
+    
+    .animate__delay-1s {
+      animation-delay: 1s;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 1200px) {
+      .slider-title {
+        font-size: 3rem;
+      }
+      .slider-subtitle {
+        font-size: 1.3rem;
+      }
+    }
+    
+    @media (max-width: 992px) {
+      .slider-img {
+        height: 70vh;
+      }
+      .slider-title {
+        font-size: 2.5rem;
+      }
+      .slider-subtitle {
+        font-size: 1.1rem;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .slider-img {
+        height: 60vh;
+        min-height: 400px;
+      }
+      .slider-title {
+        font-size: 2rem;
+      }
+      .slider-subtitle {
+        font-size: 1rem;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .slider-img {
+        height: 50vh;
+      }
+      .slider-title {
+        font-size: 1.5rem;
+      }
+      .slider-subtitle {
+        font-size: 0.9rem;
+      }
+      .carousel-caption {
+        width: 90%;
+      }
+    }
+/*for search*/
+.search-section {
+  background-color: #f8f9fa;
+}
+
+.search-form .form-control {
+  border-right: none;
+  transition: all 0.3s ease;
+}
+
+.search-form .form-control:focus {
+  box-shadow: none;
+  border-color: #0d6efd;
+}
+
+.search-form .btn {
+  transition: all 0.3s ease;
+}
+
+.search-form .btn:hover {
+  background-color: #0b5ed7;
+  transform: translateY(-1px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .search-form .form-control,
+  .search-form .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  
+  .search-section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .search-form .form-control {
+    min-width: 400px;
+  }
+}
