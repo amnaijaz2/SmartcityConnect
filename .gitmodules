@@ -1,0 +1,3 @@
+[submodule "smartcityconnect"]
+	path = smartcityconnect
+	url = https://github.com/original/repo.git
